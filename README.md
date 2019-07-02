@@ -12,5 +12,8 @@ Setup, best practices, etc for devops in Visual Studio Online
 ## VSO Build Using Azure Docker Build Agent
 > Assumes build of application is included in docker file. 
 1. Create a new build pipe. 
-1. Add the docker build task. 
-1. Point to your existing Docker registry. 
+1. <Owner> Add docker registry from azure in the Project Settings > Service Connections. 
+1. <Owner> Give permissions to the new service connection. 
+1. Add the docker build task and configure to use docker registry. 
+1. Save and Queue to test. 
+ 
